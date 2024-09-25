@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; /* Wrap on smaller screens */
 }
 
 .navbar a.logo {
@@ -37,7 +37,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap; /* Wrap for mobile compatibility */
 }
 
 nav ul li {
@@ -82,11 +82,6 @@ nav ul li a:hover {
     100% {
         transform: translate(-100%, 0); /* Move to the left */
     }
-}
-
-/* Add padding to the main content to avoid overlap with the marquee */
-main {
-    padding-top: 80px; /* Adjust based on header and marquee height */
 }
 
 /* Hero Section */
@@ -148,16 +143,6 @@ p {
     .navbar {
         flex-direction: column; /* Stack navbar items */
         align-items: flex-start; /* Align items to the start */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        width: 100%; /* Full width for nav items */
-        padding: 0; /* Remove padding */
-    }
-
-    nav ul li {
-        margin: 5px 0; /* Add vertical margin between nav items */
     }
 
     .content {
