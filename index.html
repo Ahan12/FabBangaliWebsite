@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fab বাঙ্গালী Community of Seattle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Fab বাঙ্গালী</a>
+            <ul>
+                 
+                 <li><a href="durga-puja.html">Durga Puja</a></li>
+                <li><a href="gallery.html">Past events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="marquee">
+            <p>FREE ENTRY for Durga Puja!</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <br><br><br><br><br><br><br>
+            <h1>Welcome to Fab বাঙ্গালী Community of Seattle</h1>
+            <h2>Join us for vibrant celebrations and embracing the community spirit!</h2>
+            <h3>Our facebook: <a href="https://www.facebook.com/people/Fab-%E0%A6%AC%E0%A6%BE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%B2%E0%A7%80/61557683827960/">Fab Bengali</a></h3>
+        </section>
+        
+
+        <section class="content">
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>At Fab Bengali, we aim to celebrate and preserve the Bengali culture through various events, festivals, and community engagement activities. Whether you’re a long-time member or new to the community, there’s a place for you here!</p>
+                <a href="https://www.facebook.com/people/Fab-%E0%A6%AC%E0%A6%BE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%B2%E0%A7%80/61557683827960"><img class = "general-puja-image" src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/441903473_122130114530256127_4993258436866397118_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LKGjOmj0HEwQ7kNvgGL-T4A&_nc_ht=scontent-sea1-1.xx&_nc_gid=AhrOmTI4vWnsxQGl6YDdoWA&oh=00_AYD5eebKrhY8sVF9Pqkxae-1Xy-8RG-C4-BZIDPyj5oLeQ&oe=66F7CEE4" alt="Bengali Celebration" class="feature-image"></a>
+            </div>
+
+            <div class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <div class="event-card">
+                    <a href="durga-puja.html">
+                        <img class = "durga-puja-image"src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/442498109_122124856724256127_2470842047138633540_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g4XwLl9y0igQ7kNvgH4cdpm&_nc_ht=scontent-sea1-1.xx&_nc_gid=ABCtoLUyw7XL4-g8TVJRPu1&oh=00_AYBYfxcSSZbzAOJg-Yz9lyruVsf84NVeq4Flyzm_ORvesQ&oe=66F80329" alt="Durga Puja" class="event-image">
+                        <h3>Durga Puja 2024</h3>
+                        <p>Join us for our annual Durga Puja celebration from October 10-15, 2024.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2024 Fab Bengali. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
+
